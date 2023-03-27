@@ -15,11 +15,17 @@ const port = 3001;
 
 const openDb = (): Pool => {
   const pool: Pool = new Pool({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'todo',
-    password: 'Nekku123987',
+    // user: 'postgres',
+    // host: 'localhost',
+    // database: 'todo',
+    // password: '',
+    // port: 5432,
+    user: 'root',
+    host: 'dpg-cggv6ekeooggmd80hhb0-a.oregon-postgres.render.com',
+    database: 'todo_aank',
+    password: '1mchwaciM931fVsW9a2INZo1XCKMv0fK',
     port: 5432,
+    ssl: true
   });
   return pool;
 };
